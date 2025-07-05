@@ -2,6 +2,22 @@
 
 DevSphere 1.0 is a frontend-only website (HTML/CSS/JS) that presents project info, team members, and a contact form.
 
+## Project structure
+.  
+├── assets/  
+│ └── image  
+├── css/  
+│ └── style.css  
+├── js/  
+│ └── script.js  
+├── index.html  
+├── contact.html  
+├── README.md  
+├── team.html  
+└── details.html 
+
+
+
 ## Pages
 
 - Home (`index.html`)
