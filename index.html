@@ -1,20 +1,208 @@
-<!-- Example: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DevSphere 1.0 - Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevSphere V1</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style>
+    .nav-link {
+      color: black;
+    }
+    .nav-link:hover {
+      color: #0d6efd;
+    }
+    .nav-link.active {
+      border-bottom: 2px solid #0d6efd;
+    }
+
+    .brand-text {
+      color: #0702FF;
+    }
+
+    .btn-signin {
+      background-color: #0702FF;
+      color: white;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease-in-out;
+      
+    }
+    .btn-signin:hover {
+      background-color: #0500cc;
+      color: white;
+    }
+
+    img.custom-height {
+      max-height: 520px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+  </style>
 </head>
 <body>
-  <header>
-    <h1>DevSphere 1.0</h1>
-    <p>Your gateway to project collaboration</p>
+
+  <header class="d-flex justify-content-between align-items-center py-3 px-4 border-bottom shadow-sm">
+    <!-- Left Side -->
+    <div class="fw-bold fs-4 brand-text">DevSphere V1</div>
+
+    <!-- Right Side Buttons -->
+    <nav class="d-flex gap-4">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Blog</a>
+      <a href="#" class="nav-link">About Us</a>
+      <a href="#" class="nav-link">Support</a>
+      <a href="#" class="nav-link btn-signin ">Sign in</a>
+    </nav>
   </header>
 
-  <!-- Page-specific content here -->
+  <section class="my-5 px-4">
+    <h1 class="fw-bold display-5 mb-3 text-start">Why DevSphere v.1</h1>
+    <p class="fs-5 text-muted mb-4 text-start">
+      DevSphere เป็น Project ที่พัฒนาขึ้นเพื่อพัฒนาชุมชน Programmer<br>
+      Developer ให้มีประสิทธิภาพยิ่งขึ้น
+    </p>
+    <a href="#" class="btn btn-signin">About Us</a>
+  </section>
 
-  <script src="js/script.js"></script>
+  <section class="my-4 px-4">
+    <img 
+      src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" 
+      alt="ชุมชนนักพัฒนา" 
+      class="img-fluid rounded custom-height "
+      style="max-width: 100%; height: auto;"
+    >
+  </section>
+
+  <section class="my-5 px-4">
+      <h2 class="fw-bold text-start mb-4">Learn with Devsphere</h2>
+      
+      <div class="row g-4 justify-content-start">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" class="card-img-top" alt="Learning Image 1">
+            <div class="card-body text-start">
+              <h6 class="card-title small">Introduction to Programming</h6>
+              <p class="card-text small text-muted">
+                เรียนรู้พื้นฐานการเขียนโปรแกรมที่สำคัญ เพื่อเริ่มต้นเส้นทางนักพัฒนาอย่างมั่นใจ
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" class="card-img-top" alt="Learning Image 2">
+            <div class="card-body text-start">
+              <h6 class="card-title small">Advanced Web Development</h6>
+              <p class="card-text small text-muted">
+                ขยายทักษะการพัฒนาเว็บ ด้วยเทคโนโลยีและเครื่องมือขั้นสูง
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0">
+            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" class="card-img-top" alt="Learning Image 3">
+            <div class="card-body text-start">
+              <h6 class="card-title small">Data Science Basics</h6>
+              <p class="card-text small text-muted">
+                เรียนรู้การวิเคราะห์ข้อมูลและสร้างโมเดล เพื่อเข้าใจโลกของข้อมูลอย่างลึกซึ้ง
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+<section class="my-5 px-4">
+  <h2 class="fw-bold text-start mb-4">Review</h2>
+
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <p class="fst-italic flex-grow-1">
+          "DevSphere ช่วยพัฒนาทักษะการเขียนโปรแกรมของผมได้อย่างชัดเจน และทำให้เข้าใจแนวคิดใหม่ ๆ ได้ง่ายขึ้นมาก"
+        </p>
+        <div class="d-flex align-items-center mt-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 1" class="rounded-circle me-3" style="width:60px; height:60px; object-fit: cover;">
+          <div>
+            <h6 class="mb-0">สมชาย ใจดี</h6>
+            <small class="text-muted">นักพัฒนาเว็บ</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <p class="fst-italic flex-grow-1">
+          "เนื้อหาเข้าใจง่าย และมีตัวอย่างที่ช่วยให้การเรียนรู้สนุกและนำไปใช้ได้จริง"
+        </p>
+        <div class="d-flex align-items-center mt-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 2" class="rounded-circle me-3" style="width:60px; height:60px; object-fit: cover;">
+          <div>
+            <h6 class="mb-0">สายรุ้ง แสนดี</h6>
+            <small class="text-muted">นักวิเคราะห์ข้อมูล</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <p class="fst-italic flex-grow-1">
+          "ทีมงานมืออาชีพและคอนเทนต์มีคุณภาพสูง เหมาะสำหรับทุกระดับความรู้"
+        </p>
+        <div class="d-flex align-items-center mt-4">
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User 3" class="rounded-circle me-3" style="width:60px; height:60px; object-fit: cover;">
+          <div>
+            <h6 class="mb-0">วิทวัส ศรีสุข</h6>
+            <small class="text-muted">ผู้จัดการโครงการ</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="background-color: #F0F0F2;" class="py-4">
+  <div class="container text-center">
+    <!-- ไอคอน 5 อัน -->
+    <div class="mb-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" title="Email" class="mx-2" style="width: 24px; height: 24px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Call" title="Call" class="mx-2" style="width: 24px; height: 24px;">
+      <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram" title="Instagram" class="mx-2" style="width: 24px; height: 24px;">
+      <img src="https://cdn-icons-png.flaticon.com/128/5968/5968898.png" alt="Discord" title="Discord" class="mx-2" style="width: 24px; height: 24px;">
+      <img src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="Facebook" title="Facebook" class="mx-2" style="width: 24px; height: 24px;">
+    </div>
+
+    <!-- ข้อความลิงก์ -->
+    <div>
+      <a href="#" class="text-decoration-none text-dark mx-2">Home</a> |
+      <a href="#" class="text-decoration-none text-dark mx-2">Blog</a> |
+      <a href="#" class="text-decoration-none text-dark mx-2">About Us</a> |
+      <a href="#" class="text-decoration-none text-dark mx-2">Support</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap 5 JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
